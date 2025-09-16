@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperCloud - Past Papers for Sri Lankan Students</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/papercloud_app_icon_512px.png">
+    <link rel="apple-touch-icon" href="img/papercloud_app_icon_512px.png">
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Add custom brand colors to Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        papercloud: '#0051C4',
+                        appora: '#FF7700',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles to use the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .hero-bg {
+             background-color: #f8fafc; /* bg-slate-50 */
+             background-image: radial-gradient(circle at top right, rgba(219, 234, 254, 0.5), transparent 40%),
+                               radial-gradient(circle at bottom left, rgba(219, 234, 254, 0.6), transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="img/papercloud_app_icon_512px.png" alt="PaperCloud Logo" class="h-9 w-9">
+                <span class="text-xl font-bold text-slate-900">PaperCloud</span>
+            </div>
+            <nav class="flex items-center space-x-6">
+                <a href="index.html" class="text-slate-600 hover:text-papercloud transition duration-300 font-medium">Home</a>
+                <a href="#features" class="text-slate-600 hover:text-papercloud transition duration-300 font-medium">Features</a>
+                <a href="privacy.html" class="text-slate-600 hover:text-papercloud transition duration-300 font-medium">Privacy</a>
+                <a href="terms.html" class="text-slate-600 hover:text-papercloud transition duration-300 font-medium">Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-20 md:py-32 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column: Text Content -->
+                    <div class="text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight mb-4">
+                            Your Exam Papers, <br class="hidden md:block" /> On Demand.
+                        </h1>
+                        <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-lg mx-auto md:mx-0">
+                            The essential app for Sri Lankan O/L & A/L students. Instantly find, download, and study past papers anywhere, anytime.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#" class="bg-papercloud text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 flex items-center space-x-2 w-full sm:w-auto justify-center transform hover:scale-105">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path></svg>
+                                <span>Get on Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right Column: Phone Mockup -->
+                    <div class="flex justify-center">
+                        <div class="w-80 h-[560px] bg-white rounded-[40px] p-3 border-4 border-gray-200 shadow-2xl transform md:rotate-6 transition hover:rotate-0 hover:scale-105">
+                            <div class="w-full h-full bg-slate-100 rounded-[28px] overflow-hidden p-4 flex flex-col">
+                                <!-- Mockup Header -->
+                                <div class="flex justify-between items-center mb-4">
+                                    <div class="w-16 h-3 bg-gray-300 rounded-full"></div>
+                                    <div class="w-8 h-8 bg-papercloud rounded-full flex items-center justify-center">
+                                        <div class="w-4 h-4 bg-blue-300 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <!-- Mockup Content -->
+                                <div class="space-y-3">
+                                    <div class="w-3/4 h-5 bg-gray-300 rounded-md"></div>
+                                    <div class="w-full h-12 bg-white border border-gray-200 rounded-lg flex items-center px-3 space-x-2">
+                                        <div class="w-6 h-6 bg-papercloud/20 rounded"></div>
+                                        <div class="w-1/2 h-3 bg-gray-300 rounded-full"></div>
+                                    </div>
+                                    <div class="w-full h-12 bg-white border border-gray-200 rounded-lg flex items-center px-3 space-x-2">
+                                         <div class="w-6 h-6 bg-papercloud/20 rounded"></div>
+                                        <div class="w-2/3 h-3 bg-gray-300 rounded-full"></div>
+                                    </div>
+                                    <div class="w-full h-12 bg-white border border-gray-200 rounded-lg flex items-center px-3 space-x-2">
+                                        <div class="w-6 h-6 bg-papercloud/20 rounded"></div>
+                                        <div class="w-1/2 h-3 bg-gray-300 rounded-full"></div>
+                                    </div>
+                                </div>
+                                 <div class="w-full h-5 bg-gray-300 rounded-md mt-6"></div>
+                                 <div class="w-full h-12 bg-white border border-gray-200 rounded-lg mt-3"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Designed For The Modern Student</h2>
+                    <p class="text-lg text-slate-600 mt-2 max-w-2xl mx-auto">PaperCloud isn't just a library; it's a powerful study tool built for your success.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-papercloud text-white rounded-lg h-12 w-12 flex items-center justify-center mb-5 shadow-lg">
+                           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Advanced Search</h3>
+                        <p class="text-slate-600">Navigate O/L & A/L papers by stream, subject, and year. Find exactly what you need in seconds.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-papercloud text-white rounded-lg h-12 w-12 flex items-center justify-center mb-5 shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Offline First</h3>
+                        <p class="text-slate-600">Download papers directly to your device and access your entire library without an internet connection.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-papercloud text-white rounded-lg h-12 w-12 flex items-center justify-center mb-5 shadow-lg">
+                           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m4 0v2M3 10h12M3 15h12M4 19h12M2 2h20v20H2V2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Multi-Language</h3>
+                        <p class="text-slate-600">Access papers in Sinhala, Tamil, and English mediums, with a fully localized app experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="bg-papercloud rounded-2xl p-10 md:p-16 text-center shadow-2xl">
+                     <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Ready to Ace Your Exams?</h2>
+                     <p class="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">Download PaperCloud today and get instant access to the most comprehensive collection of Sri Lankan past papers.</p>
+                     <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#" class="bg-white text-papercloud font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-slate-200 transition duration-300 flex items-center space-x-2 w-full sm:w-auto justify-center transform hover:scale-105">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path></svg>
+                            <span>Get on Google Play</span>
+                        </a>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <div class="flex justify-center items-center mb-4">
+                <p class="mr-3 text-lg">Developed by</p>
+                <span class="text-xl font-bold text-appora">Appora</span>
+            </div>
+            <div class="space-x-6 mb-4">
+                <a href="privacy.html" class="hover:text-appora transition">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-appora transition">Terms & Conditions</a>
+                <span class="text-slate-400">|</span>
+                <a href="mailto:apporadev@gmail.com" class="hover:text-appora transition">apporadev@gmail.com</a>
+            </div>
+            <p>&copy; 2024 PaperCloud. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
